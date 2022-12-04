@@ -1,11 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"math"
 )
 
 func main() {
-
+	fmt.Println(mathFunc(-1.0))
 }
 
 // y=arcsin(-x) + 13x
