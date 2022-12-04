@@ -6,7 +6,16 @@ import (
 )
 
 func main() {
-	fmt.Println(mathFunc(-1.0))
+	fmt.Println("Hello! It's mini calculator for y=arcsin(-x) + 13x")
+	x := -2.0
+	for x < -1.0 || x > 1.0 {
+		fmt.Println("Print some in [-1;1]")
+		if _, err := fmt.Scan(&x); err != nil {
+			fmt.Errorf("%s", err)
+			return
+		}
+	}
+	fmt.Println(mathFunc(x))
 }
 
 // y=arcsin(-x) + 13x
